@@ -29,6 +29,22 @@ validation_data = datasets.MNIST(
 print(train_data)
 print(validation_data)
 
+loaders = {
+    'train': DataLoader(
+                 train_data,
+                 batch_size=100, 
+                 shuffle=True, 
+                 num_workers=1
+             ),
+    'validation': DataLoader(
+                      validation_data, 
+                      batch_size=100, 
+                      shuffle=True, 
+                      num_workers=1
+                  ),
+}
+
+
 def show_example(i):
     plt.imshow(train_data.data[i], cmap="gray")
     plt.title(f"{train_data.targets[i]}")
