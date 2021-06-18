@@ -2,6 +2,8 @@
 
 See [here](https://machinelearningmastery.com/pytorch-tutorial-develop-deep-learning-models/) for a good tutorial.
 
+The ex1 model comes from [here](https://ashleyy-czumak.medium.com/mnist-digit-classification-in-pytorch-302476b34e4f). 
+
 1. Prepare the data
 2. Define the model
 3. Train the model
